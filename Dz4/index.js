@@ -73,7 +73,7 @@ actionsOnIntroductory();
 console.log(arr);
 
 //Выводим числа и применяем соответствующее действие
-let sumValue;
+
 let valueProcessing;
 
 function outputApplyAction(param){
