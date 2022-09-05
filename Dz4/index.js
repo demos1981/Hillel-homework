@@ -21,16 +21,19 @@
 //----------------------Решение
 
 //Спрашиваем мат.операцию------------------------------------------
-let action;
-
+let action=0;
+function chooseYourAction(){
 do{
  action = prompt('Какое действие с числами вы хотите сделать?');
 }while(isCheckingValidityAction(action));
+return action;
+}
+chooseYourAction();
 
 function isCheckingValidityAction(val) {
     return val !== '+'&& val !== '-' && val !== '*' && val !== '/';
 }
-   console.log(action);
+ 
 
 
 //Спрашиваем сколько чисел нужно считать---------------------------
