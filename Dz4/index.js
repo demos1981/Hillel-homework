@@ -78,21 +78,21 @@ function outputApplyAction(param){
     let valueProcessing;
     switch (param){
         case '+': valueProcessing = arr.reduce(function(sum) {
-                    return sum + elem;
+                    return sum+=sum;
                    
                 });
                 console.log(valueProcessing);
                 alert('Вы ввели числа-:'+arr.join('+')+'='+ valueProcessing);    
         break;
-        case '-':valueProcessing = arr.reduce(function(sum, elem) {
-                    
-                  return sum - elem;
+        case '-':valueProcessing = arr.reduce(function(sum,elem) {
+                    console.log(sum);
+                  return sum = sum - elem;
                 });
                 console.log(valueProcessing);
                 alert('Вы ввели числа-:'+arr.join('-')+'='+ valueProcessing); 
                 
         break;
-        case '*':valueProcessing = arr.reduce(function(sum, elem) {
+        case '*':valueProcessing = arr.reduce(function(sum,elem) {
                     
                   return sum * elem;
                 });
@@ -100,7 +100,7 @@ function outputApplyAction(param){
                console.log(valueProcessing);
                alert('Вы ввели числа-:'+arr.join('*')+'='+ valueProcessing); 
         break;
-        case '/':valueProcessing = arr.reduce(function(sum, elem) {
+        case '/':valueProcessing = arr.reduce(function(sum,elem) {
                     
                  return sum / elem;
                 });
