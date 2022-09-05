@@ -74,21 +74,20 @@ console.log(arr);
 
 //Выводим числа и применяем соответствующее действие
 
-let valueProcessing;
-
 function outputApplyAction(param){
+    let valueProcessing;
     switch (param){
-        case '+': valueProcessing = arr.reduce(function(sum, elem) {
+        case '+': valueProcessing = arr.reduce(function(sum) {
                     return sum + elem;
                    
-                }, 0);
+                });
                 console.log(valueProcessing);
                 alert('Вы ввели числа-:'+arr.join('+')+'='+ valueProcessing);    
         break;
         case '-':valueProcessing = arr.reduce(function(sum, elem) {
                     
                   return sum - elem;
-                }, (arr[0]*2));
+                });
                 console.log(valueProcessing);
                 alert('Вы ввели числа-:'+arr.join('-')+'='+ valueProcessing); 
                 
@@ -96,7 +95,7 @@ function outputApplyAction(param){
         case '*':valueProcessing = arr.reduce(function(sum, elem) {
                     
                   return sum * elem;
-                }, 1);
+                });
   
                console.log(valueProcessing);
                alert('Вы ввели числа-:'+arr.join('*')+'='+ valueProcessing); 
@@ -104,7 +103,7 @@ function outputApplyAction(param){
         case '/':valueProcessing = arr.reduce(function(sum, elem) {
                     
                  return sum / elem;
-                }, (arr[0]*arr[0]));
+                });
 
                 console.log(valueProcessing);
                 alert('Вы ввели числа-:'+arr.join('/')+'='+ valueProcessing); 
