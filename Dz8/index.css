@@ -1,4 +1,5 @@
 body{
+    box-sizing: border-box;
     height:80%;
     width:80%;
     display: flex;
@@ -34,15 +35,17 @@ span{
     background-color:grey;
     cursor:pointer;
     color:azure;
+   
     
 }
 .watchResult{
     height: fit-content;
     width: fit-content;
     position: absolute;
-    top: 40%;
-    left: -46%;
+    top: 297px;
+ 
     color: white;
     background-color: chocolate;
     font-size: 20px;
+
 }
