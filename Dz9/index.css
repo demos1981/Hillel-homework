@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100%;
+    width: 100%;
+    background-color:burlywood;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.bodyToDoList{
+    display: flex;
+    height: 500px;
+    width: 600px;
+    background-color:#344A8C ;
+    margin:5%;
+    border-radius: 20%;
+    flex-direction:column;
+    align-items:center;
+}
+p{
+    
+    height: 30px;
+    font-size:20px;
+    color:white;
+    
+
+}
+.toDoName{
+    margin:10px;
+}
+.entertask{
+position: relative;
+right: 10px;
+}
+#newTextList{
+    position: relative;
+   
+}
+#enterTodoList{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#enterArea{
+    position: relative;
+    width:350px;
+    height:30px;
+    background-color: beige;
+    border-radius: 20px;
+
+}
+
+.newAddTask{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width:fit-content;
+    height:30px;
+    border:2px white solid;
+    border-radius:10px;
+    margin-bottom: 5px;
+    padding:5px;
+    cursor:pointer;
+}
+.newColorText{
+    background-color: green;
+    color:white;
+}
