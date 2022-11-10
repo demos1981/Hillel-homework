@@ -1,0 +1,70 @@
+html{
+  height:100%;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+   
+    height:100%;
+    width: 100%;
+    background-color:rgb(39, 37, 31);
+}
+
+  
+  .invalidInput {
+    background-color: rgb(223, 154, 97)
+  }
+  .hidden {
+    display: none;
+  }
+  p{
+    color:beige;
+  }
+  .wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border:2px solid #0b6252;
+  border-radius: 12px;
+    background-color: aquamarine;
+  }
+  thead{
+    background-color: #0b6252;
+    color:beige;
+  
+  }
+  th{
+    border-radius: 5px;
+  }
+  td{
+    border-bottom: 2px solid #0b6252;
+  }
+  #addContactBtn{
+    background-color: #2be9c6;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #name, #surname, #email{
+   
+    border:2px solid #0b6252 ;
+    border-radius: 5px;
+  }
+  .editBtn{
+    background-color:#5ec8e2 ;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .deleteBtn{
+    background-color:#e97324 ;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
