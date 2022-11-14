@@ -28,7 +28,7 @@ class FormView {
         const obj = {
             title : e.target.elements.title.value,
         }
-        this.config.onSave(obj);
+        this.#config.onSave(obj);
         e.target.reset();
        });
     }
