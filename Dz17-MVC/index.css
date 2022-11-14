@@ -1,0 +1,54 @@
+
+*{
+    padding:0;
+    margin:0;
+
+}
+body{
+    margin-top: 10%;
+    display:flex;
+    background-color:rgb(54, 44, 17) ;
+    justify-content: center;
+    align-items: center;
+}
+.inputItems{
+    background-color: rgb(203, 228, 219);
+    width: 500px;
+    height: 30px;
+    border:3px solid rgb(126, 100, 199);
+    border-radius: 5px;
+}
+#saveTodoBtn{
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    background-color:rgb(203, 228, 219);
+    border:3px solid rgb(126, 100, 199);
+    color: rgb(8, 58, 29);
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+.todo-item {
+    width:500px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid;
+    margin: 5px;
+    background-color: lightyellow;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .todo-item.done {
+    background-color: lightgreen;
+  }
+  
+  .todo-item .delete-btn {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  input.invalid-input {
+    background-color: lightcoral;
+  }
